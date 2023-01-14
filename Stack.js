@@ -16,7 +16,7 @@ class Stack {
         this.#stackArr.push(num);
     }
     empty() {
-        return this.#stackArr.length == 0
+        return this.length() == 0
     }
     pop() {
         let item = this.top();
@@ -27,20 +27,10 @@ class Stack {
     }
     top() {
         if (!this.empty()) {
-            let item = this.#stackArr[this.#stackArr.length - 1];
-            return item;
+            return this.#stackArr[this.#stackArr.length - 1]; 
         }
         else {
             return -1;
         }
     }
 }
-
-let s = new Stack();
-console.log(s.stackArr)
-s.push(1)
-console.log(s.stackArr)
-console.log('top', s.top())
-console.log(s.stackArr)
-console.log('pop', s.pop())
-console.log(s.stackArr)
