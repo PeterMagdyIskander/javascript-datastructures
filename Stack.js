@@ -1,25 +1,33 @@
 class Stack {
-    stackArr = [];
+    #stackArr = [];
+
+    get stackArr() {
+        return this.#stackArr;
+    }
+
+    set stackArr(arr) {
+        this.#stackArr=arr;
+    }
 
     length() {
-        return this.stackArr.length;
+        return this.#stackArr.length;
     }
     push(num) {
-        this.stackArr.push(num);
+        this.#stackArr.push(num);
     }
     empty() {
-        return this.stackArr.length == 0
+        return this.#stackArr.length == 0
     }
     pop() {
         let item = this.top();
         if (item) {
-            this.stackArr.splice(this.stackArr.length - 1, 1);
+            this.#stackArr.splice(this.#stackArr.length - 1, 1);
         }
         return item;
     }
     top() {
         if (!this.empty()) {
-            let item = this.stackArr[this.stackArr.length - 1];
+            let item = this.#stackArr[this.#stackArr.length - 1];
             return item;
         }
         else {
