@@ -15,7 +15,6 @@ class ArrayList {
     append(num) {
         this.#arrayList.push(num)
     }
-
     At(index) {
         if (index < 0 || index >= this.length()) return -1;
         return this.#arrayList[index];
@@ -45,11 +44,3 @@ class ArrayList {
         return
     }
 }
-
-let arr = new ArrayList();
-arr.append(9)
-arr.append(8)
-arr.append(7)
-arr.append(6)
-arr.append(5)
-arr.insetAt(1, 10)
