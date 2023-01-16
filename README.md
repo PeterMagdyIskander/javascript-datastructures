@@ -1,7 +1,7 @@
 # Complexities
 ## Worst Case
-![Worst Case Scenario](/worst-case.png)
+![Worst Case Scenario](./assets/worst-case.png)
 ## Best Case
-![Best Case Scenario](/best-case.png)
+![Best Case Scenario](./assets/best-case.png)
 ## Average Case
-![Average Case Scenario](/average-case.png)
+![Average Case Scenario](./assets/average-case.png)
